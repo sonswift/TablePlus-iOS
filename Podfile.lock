@@ -1,3 +1,38 @@
-PODFILE CHECKSUM: 700d7f01ff4448cbc89d4133d6328a95213cb424
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - ObjectMapper (3.4.1)
+  - Realm (3.11.2):
+    - Realm/Headers (= 3.11.2)
+  - Realm/Headers (3.11.2)
+  - RealmSwift (3.11.2):
+    - Realm (= 3.11.2)
+  - SwiftDate (5.0.13)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper
+  - RealmSwift
+  - SwiftDate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - SwiftDate
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  Realm: 864477d028db77f7c5a0cba64a4892ad53db128a
+  RealmSwift: 12b8262fc08020b47de4fd88eb3d5c9425b34ec7
+  SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
+
+PODFILE CHECKSUM: a6978c00c335142f92df9dd60d5c51ca57d6e854
 
 COCOAPODS: 1.5.3

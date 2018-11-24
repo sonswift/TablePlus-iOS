@@ -10,13 +10,26 @@
 		5E9D1DA9778BD16A6F7D1B1E /* Pods_TablePlus_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339CDDE05AB706576F4C3F2D /* Pods_TablePlus_iOSUITests.framework */; };
 		AB869F108DF8265F1C985EAC /* Pods_TablePlus_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF5DB9185CE881F8E7FDA6D /* Pods_TablePlus_iOS.framework */; };
 		DAB860ACF6ABDDC78D81C193 /* Pods_TablePlus_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E389349AA48838E67A7A8 /* Pods_TablePlus_iOSTests.framework */; };
+		E756879821A97220001E7E5F /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756879721A97220001E7E5F /* NoteModel.swift */; };
+		E756879B21A97441001E7E5F /* Main-UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756879A21A97441001E7E5F /* Main-UITableViewDelegate.swift */; };
+		E756879D21A97487001E7E5F /* Main-UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756879C21A97487001E7E5F /* Main-UITableViewDataSource.swift */; };
+		E756879F21A97718001E7E5F /* NoteSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756879E21A97718001E7E5F /* NoteSectionModel.swift */; };
+		E75687A221A978ED001E7E5F /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687A121A978ED001E7E5F /* NoteManager.swift */; };
+		E75687A421A97A79001E7E5F /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687A321A97A79001E7E5F /* NoteDetailViewController.swift */; };
+		E75687A721A985BD001E7E5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687A621A985BD001E7E5F /* StringExtension.swift */; };
+		E75687A921A992E1001E7E5F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687A821A992E1001E7E5F /* RealmManager.swift */; };
+		E75687AC21A99333001E7E5F /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687AB21A99333001E7E5F /* ValidatorProtocol.swift */; };
+		E75687AF21A99754001E7E5F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687AE21A99754001E7E5F /* Notifications.swift */; };
+		E75687B221A99AFC001E7E5F /* NoteHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75687B121A99AFC001E7E5F /* NoteHeaderView.swift */; };
+		E75687B421A99B03001E7E5F /* NoteHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75687B321A99B03001E7E5F /* NoteHeaderView.xib */; };
 		E75C8B3821A9643500D793FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B3721A9643500D793FC /* AppDelegate.swift */; };
-		E75C8B3A21A9643500D793FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B3921A9643500D793FC /* ViewController.swift */; };
+		E75C8B3A21A9643500D793FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B3921A9643500D793FC /* MainViewController.swift */; };
 		E75C8B3D21A9643500D793FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75C8B3B21A9643500D793FC /* Main.storyboard */; };
 		E75C8B3F21A9643700D793FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75C8B3E21A9643700D793FC /* Assets.xcassets */; };
 		E75C8B4221A9643700D793FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75C8B4021A9643700D793FC /* LaunchScreen.storyboard */; };
 		E75C8B4D21A9643700D793FC /* TablePlus_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B4C21A9643700D793FC /* TablePlus_iOSTests.swift */; };
 		E75C8B5821A9643700D793FC /* TablePlus_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B5721A9643700D793FC /* TablePlus_iOSUITests.swift */; };
+		E75C8B6A21A96E4300D793FC /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75C8B6921A96E4300D793FC /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +59,21 @@
 		A69A101022C8F6478F52604E /* Pods-TablePlus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablePlus-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablePlus-iOS/Pods-TablePlus-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AFF5DB9185CE881F8E7FDA6D /* Pods_TablePlus_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TablePlus_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFF7466658062CF53E58455 /* Pods-TablePlus-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TablePlus-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TablePlus-iOSUITests/Pods-TablePlus-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E756879721A97220001E7E5F /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		E756879A21A97441001E7E5F /* Main-UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main-UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		E756879C21A97487001E7E5F /* Main-UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main-UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		E756879E21A97718001E7E5F /* NoteSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSectionModel.swift; sourceTree = "<group>"; };
+		E75687A121A978ED001E7E5F /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
+		E75687A321A97A79001E7E5F /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		E75687A621A985BD001E7E5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E75687A821A992E1001E7E5F /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		E75687AB21A99333001E7E5F /* ValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
+		E75687AE21A99754001E7E5F /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		E75687B121A99AFC001E7E5F /* NoteHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteHeaderView.swift; sourceTree = "<group>"; };
+		E75687B321A99B03001E7E5F /* NoteHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteHeaderView.xib; sourceTree = "<group>"; };
 		E75C8B3421A9643500D793FC /* TablePlus-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TablePlus-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75C8B3721A9643500D793FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E75C8B3921A9643500D793FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E75C8B3921A9643500D793FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E75C8B3C21A9643500D793FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E75C8B3E21A9643700D793FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E75C8B4121A9643700D793FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +84,7 @@
 		E75C8B5321A9643700D793FC /* TablePlus-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TablePlus-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75C8B5721A9643700D793FC /* TablePlus_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePlus_iOSUITests.swift; sourceTree = "<group>"; };
 		E75C8B5921A9643700D793FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75C8B6921A96E4300D793FC /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +138,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E756879621A9720E001E7E5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E756879721A97220001E7E5F /* NoteModel.swift */,
+				E756879E21A97718001E7E5F /* NoteSectionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E756879921A9742D001E7E5F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E756879A21A97441001E7E5F /* Main-UITableViewDelegate.swift */,
+				E756879C21A97487001E7E5F /* Main-UITableViewDataSource.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E75687A021A978DF001E7E5F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E75687AA21A99325001E7E5F /* Validator */,
+				E75687A821A992E1001E7E5F /* RealmManager.swift */,
+				E75687A121A978ED001E7E5F /* NoteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E75687A521A985AE001E7E5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E75687A621A985BD001E7E5F /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E75687AA21A99325001E7E5F /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				E75687AB21A99333001E7E5F /* ValidatorProtocol.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		E75687AD21A99740001E7E5F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				E75687AE21A99754001E7E5F /* Notifications.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		E75687B021A99AD5001E7E5F /* NoteHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E75687B121A99AFC001E7E5F /* NoteHeaderView.swift */,
+				E75687B321A99B03001E7E5F /* NoteHeaderView.xib */,
+			);
+			path = NoteHeader;
+			sourceTree = "<group>";
+		};
 		E75C8B2B21A9643500D793FC = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +224,14 @@
 		E75C8B3621A9643500D793FC /* TablePlus-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E75687AD21A99740001E7E5F /* Notifications */,
+				E75687A521A985AE001E7E5F /* Extensions */,
+				E75687A021A978DF001E7E5F /* Managers */,
+				E756879621A9720E001E7E5F /* Models */,
+				E75C8B6721A96E0300D793FC /* Elements */,
+				E75C8B6521A96D0D00D793FC /* Controllers */,
+				E75C8B6621A96D1B00D793FC /* Storyboards */,
 				E75C8B3721A9643500D793FC /* AppDelegate.swift */,
-				E75C8B3921A9643500D793FC /* ViewController.swift */,
-				E75C8B3B21A9643500D793FC /* Main.storyboard */,
 				E75C8B3E21A9643700D793FC /* Assets.xcassets */,
 				E75C8B4021A9643700D793FC /* LaunchScreen.storyboard */,
 				E75C8B4321A9643700D793FC /* Info.plist */,
@@ -165,6 +257,41 @@
 			path = "TablePlus-iOSUITests";
 			sourceTree = "<group>";
 		};
+		E75C8B6521A96D0D00D793FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E756879921A9742D001E7E5F /* Main */,
+				E75C8B3921A9643500D793FC /* MainViewController.swift */,
+				E75687A321A97A79001E7E5F /* NoteDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E75C8B6621A96D1B00D793FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E75C8B3B21A9643500D793FC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E75C8B6721A96E0300D793FC /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				E75687B021A99AD5001E7E5F /* NoteHeader */,
+				E75C8B6821A96E0700D793FC /* TableCells */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		E75C8B6821A96E0700D793FC /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				E75C8B6921A96E4300D793FC /* NoteTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +303,7 @@
 				E75C8B3021A9643500D793FC /* Sources */,
 				E75C8B3121A9643500D793FC /* Frameworks */,
 				E75C8B3221A9643500D793FC /* Resources */,
+				7B3A7FF234D980399A5FEDC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75C8B4221A9643700D793FC /* LaunchScreen.storyboard in Resources */,
+				E75687B421A99B03001E7E5F /* NoteHeaderView.xib in Resources */,
 				E75C8B3F21A9643700D793FC /* Assets.xcassets in Resources */,
 				E75C8B3D21A9643500D793FC /* Main.storyboard in Resources */,
 			);
@@ -331,6 +460,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7B3A7FF234D980399A5FEDC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TablePlus-iOS/Pods-TablePlus-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TablePlus-iOS/Pods-TablePlus-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F6968D4095B405679DC723EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,8 +513,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E75C8B3A21A9643500D793FC /* ViewController.swift in Sources */,
+				E756879F21A97718001E7E5F /* NoteSectionModel.swift in Sources */,
+				E756879D21A97487001E7E5F /* Main-UITableViewDataSource.swift in Sources */,
+				E75687AC21A99333001E7E5F /* ValidatorProtocol.swift in Sources */,
+				E75687A921A992E1001E7E5F /* RealmManager.swift in Sources */,
+				E75687A721A985BD001E7E5F /* StringExtension.swift in Sources */,
+				E75687AF21A99754001E7E5F /* Notifications.swift in Sources */,
+				E75687A421A97A79001E7E5F /* NoteDetailViewController.swift in Sources */,
+				E75687B221A99AFC001E7E5F /* NoteHeaderView.swift in Sources */,
+				E75C8B3A21A9643500D793FC /* MainViewController.swift in Sources */,
+				E756879821A97220001E7E5F /* NoteModel.swift in Sources */,
+				E756879B21A97441001E7E5F /* Main-UITableViewDelegate.swift in Sources */,
+				E75687A221A978ED001E7E5F /* NoteManager.swift in Sources */,
 				E75C8B3821A9643500D793FC /* AppDelegate.swift in Sources */,
+				E75C8B6A21A96E4300D793FC /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
