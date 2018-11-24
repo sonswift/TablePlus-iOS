@@ -73,20 +73,16 @@ extension RealmManager {
 extension RealmManager: ManagerSavingProtocol {
     func save<T>(_ object: T, update: Bool) throws where T : Object {
         guard let _realm = getRealm() else { return }
-        do {
-            try _realm.write {
-                _realm.add(object, update: update)
-            }
-        } catch { throw error }
+        try _realm.write {
+            _realm.add(object, update: update)
+        }
     }
 
     func save<T>(_ objects: [T], update: Bool) throws where T : Object {
         guard let _realm = getRealm() else { return }
-        do {
-            try _realm.write {
-                _realm.add(objects, update: update)
-            }
-        } catch { throw error }
+        try _realm.write {
+            _realm.add(objects, update: update)
+        }
     }
 }
 
@@ -121,11 +117,9 @@ extension RealmManager: ManagerGettingSortedProtocol {
 extension RealmManager: ManagerUpdateProtocol {
     func update(block: @escaping () -> Void) throws {
         guard let _realm = getRealm() else { return }
-        do {
-            try _realm.write {
-                block()
-            }
-        } catch { throw error }
+        try _realm.write {
+            block()
+        }
     }
 }
 
@@ -133,27 +127,21 @@ extension RealmManager: ManagerUpdateProtocol {
 extension RealmManager: ManagerDeleteProtocol {
     func delete<T>(object: T) throws where T : Object {
         guard let _realm = getRealm() else { return }
-        do {
-            try _realm.write {
-                _realm.delete(object)
-            }
-        } catch { throw error }
+        try _realm.write {
+            _realm.delete(object)
+        }
     }
     func delete<T>(objects: [T]) throws where T : Object {
         guard let _realm = getRealm() else { return }
-        do {
-            try _realm.write {
-                _realm.delete(objects)
-            }
-        } catch { throw error }
+        try _realm.write {
+            _realm.delete(objects)
+        }
     }
 }
 
 // MARK: - ManagerValidation
 extension RealmManager: ValidatorProtocol {
     func isValidated(_ value: Any) throws -> Bool {
-        do {
-            return try getValidator()?.isValidated(value) ?? false
-        } catch { throw error }
+        return try getValidator()?.isValidated(value) ?? false
     }
 }

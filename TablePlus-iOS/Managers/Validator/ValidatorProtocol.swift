@@ -20,9 +20,7 @@ extension ValidationTriggerProtocol {
     /// - Returns: isValidated or not
     @discardableResult
     func applyValidate(by validator: ValidatorProtocol) throws -> Bool {
-        do {
-            return try validator.isValidated(self)
-        } catch { throw error }
+        return try validator.isValidated(self)
     }
 }
 /// ValidationTriggerProtocols extensions
