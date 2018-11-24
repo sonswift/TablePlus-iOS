@@ -14,7 +14,7 @@ protocol ValidationTriggerProtocol {
     func applyValidate(by validator: ValidatorProtocol) throws -> Bool
 }
 extension ValidationTriggerProtocol {
-    /// LalaValidator: ValidationTriggerProtocol
+    /// Validator: ValidationTriggerProtocol
     ///
     /// - Parameter value: A ValidatorProtocol which contains a set of conditions
     /// - Returns: isValidated or not
@@ -32,7 +32,7 @@ extension Array: ValidationTriggerProtocol {}
 
 // MARK: - ValidatorProtocol
 protocol ValidatorProtocol {
-    /// LalaValidator: Validator protocol.
+    /// Validator: Validator protocol.
     ///
     /// - Parameter value: Any object to check its validation.
     /// - Returns: Validator of this value.

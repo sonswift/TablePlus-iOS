@@ -9,25 +9,25 @@
 import UIKit
 import RealmSwift
 
-/// LalaManager: Manager Saving protocol.
+/// Manager: Manager Saving protocol.
 protocol ManagerSavingProtocol {
     func save<T: Object>(_ object: T, update: Bool) throws
     func save<T: Object>(_ objects: [T], update: Bool) throws
 }
-/// LalaManager: Manager Getting protocol.
+/// Manager: Manager Getting protocol.
 protocol ManagerGettingProtocol {
     func object<T: Object>(with type: T.Type, key: Any) -> T?
     func objects<T: Object>(with type: T.Type) -> [T]
 }
-/// LalaManager: Manager Getting with Sort protocol.
+/// Manager: Manager Getting with Sort protocol.
 protocol ManagerGettingSortedProtocol {
     func objects<T: Object>(with type: T.Type, sortKeypath: String, ascending: Bool) -> [T]
 }
-/// LalaManager: Manager Update protocol.
+/// Manager: Manager Update protocol.
 protocol ManagerUpdateProtocol {
     func update(block: @escaping () -> Void) throws
 }
-/// LalaManager: Manager Delete protocol.
+/// Manager: Manager Delete protocol.
 protocol ManagerDeleteProtocol {
     func delete<T: Object>(object: T) throws
     func delete<T: Object>(objects: [T]) throws

@@ -44,6 +44,7 @@ class MainViewController: UITableViewController {
             }
         } catch { print(error._code, error.localizedDescription) }
     }
+    // Grouped by Month
     private func group(notes: [NoteModel]) -> [NoteSectionModel] {
         var dateList = [String]()
         var sections = [NoteSectionModel]()
